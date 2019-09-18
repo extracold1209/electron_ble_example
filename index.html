@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <div>
+    <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+  </div>
+  <div>
+    <input type="text" id="device_name" />
+    <span id="notify_log"></span>
+    <button onclick="onButtonClick()" value="Button">Discover&Connect</button>
+    <button onclick="onCharacteristicActivationClick()" value="Button">RunCharacteristic</button>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
